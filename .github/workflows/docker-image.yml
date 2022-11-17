@@ -24,4 +24,4 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         
     - name: push to Dockerhub
-      run: docker push nginx
+      run: docker push nginx:latest
