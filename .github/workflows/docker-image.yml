@@ -23,5 +23,10 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         
-    - name: push to Dockerhub
-      run: docker push nginx:latest
+    - name: Tag to image
+      run: docker tag myfirstimage manikantaadabala/nginx
+      
+    - name: push to dockerhub
+      run: docker push manikantaadabala/nginx
+     
+      
