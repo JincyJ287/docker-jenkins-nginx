@@ -24,7 +24,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         
     - name: Tag to image
-      run: docker tag myfirstimage manikantaadabala/nginx
+      run: docker tag nginx manikantaadabala/nginx
       
     - name: push to dockerhub
       run: docker push manikantaadabala/nginx
